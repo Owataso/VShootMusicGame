@@ -1,0 +1,62 @@
+; tdn.def : DLL のモジュール パラメータを宣言します。
+ 
+LIBRARY      "DirectX"
+ 
+EXPORTS
+    ; 明示的なエクスポートはここへ記述できます
+ 
+    NewSceneMain    ;インスタンス生成
+	DeleteSceneMain ;インスタンス削除
+	Init			;初期化
+
+	Update			;更新処理
+	Render			;描画処理
+
+	LoadMIDI	   	;MIDI読み込み
+
+	LoadProject			;プロジェクトフォルダ読み込み
+	LoadProjectByOMS	;OMSからプロジェクト作成
+	SaveProject			;プロジェクトデータ保存
+
+	InportOGG		;OGGインポート(プロジェクトフォルダにつっこむ)
+
+	GetOMSOpenType	;開いているOMSの状態
+	isMusicOpend	;OGG開いているかどうか
+
+	GetShift		;曲と譜面の調整
+	SetShift		;曲と譜面の調整
+
+	PlayMusic		;曲の再生
+	StopMusic		;曲の停止
+
+	StartEdit		;エディット開始
+	EndEdit			;エディット終了
+
+	SetCurrentPosition		;現在座標の設定(エディット時)
+
+	GetState		;ステートの取得
+	GetNumNote		;ノーツ数取得
+	GetNoteData		;ノート情報取得
+	SetNoteData		;ノート情報設定
+
+	BaseToVRShooting	;ベース譜面からVRシューティング譜面に変換
+
+	SelectEditNote		;エディットノート選択
+	GetEditNoteIndex	;選択エディットノート取得
+
+	MouseLeftDown		;ウィンドウをマウスでクリックしたときに呼ぶ
+	MouseLeftDrag		;ウィンドウをクリックしながらドラッグしたときに呼ぶ
+	MouseRightDown		;ウィンドウをマウスでクリックしたときに呼ぶ
+	MouseRightUp		;ウィンドウをマウスでクリックして離したときに呼ぶ
+	MouseRightDrag		;ウィンドウをクリックしながらドラッグしたときに呼ぶ
+
+	GetMaxDegree	;最大角度取得
+	SetMaxDegree	;最大角度設定
+
+	GetDragFlagVRShoot		;ドラッグフラグ取得
+	SetDragFlagVRShoot		;ドラッグフラグ設定
+
+	CopyNote			;ノーツ情報コピー
+	PasteNote			;ノーツ情報ペースト
+	ReverseX			;X反転
+	ReverseY			;Y反転
