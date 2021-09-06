@@ -1,0 +1,6 @@
+Unleash Spell
+Phantomizer
+0 0 0 31
+0
+215 ~ 215
+2 ~ 15

@@ -1,0 +1,6 @@
+Cosmic Flyer
+Owataso
+0 10 20 0
+0
+146 ~ 146
+56 ~ 70
